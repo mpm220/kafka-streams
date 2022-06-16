@@ -1,0 +1,22 @@
+[
+    {
+      "company_name": "Tesla",
+      "Founding_Member": "A Geek",
+      "Founding_Year": 1986,
+      "EmployeeCount": 247474,
+      "Ticker": "TSLA"
+    },{
+      "company_name": "Microsoft",
+      "Founding_Member": "Bill",
+      "Founding_Year": 1977,
+      "EmployeeCount": 3434,
+      "Ticker": "MSFT"
+    },
+    {
+      "company_name": "Alphabet",
+      "Founding_Member": "some google person",
+      "Founding_Year": 1990,
+      "EmployeeCount": 247,
+      "Ticker": "ALPHA"
+    }
+  ]

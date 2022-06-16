@@ -1,0 +1,22 @@
+[
+    {
+      "companyName": "Tesla",
+      "FoundingMember": "Elon",
+      "FoundingYear": 1986,
+      "Employee_Count": 20000,
+      "Ticker": "TSLA"
+    },{
+    "companyName": "Microsoft",
+    "FoundingMember": "Bill Gates",
+    "FoundingYear": 1977,
+    "Employee_Count": 3435,
+    "Ticker": "MSFT"
+  },
+    {
+      "companyName": "Alphabet",
+      "FoundingMember": "Mo Salah",
+      "FoundingYear": 1990,
+      "Employee_Count": 248,
+      "Ticker": "ALPHA"
+    }
+  ]

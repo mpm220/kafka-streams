@@ -24,7 +24,7 @@ public class Producer {
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
-        KafkaProducer<Integer, String> producer = new KafkaProducer<Integer, String>(props);
+        KafkaProducer<String, Company> producer = new KafkaProducer<String, Company>(props);
 
         producer.send(new ProducerRecord<>("newTest", 6, "simpleMessage"));
         producer.close();
