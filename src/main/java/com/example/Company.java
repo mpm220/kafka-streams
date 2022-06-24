@@ -1,6 +1,4 @@
 package com.example;
-import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
-
 import org.apache.avro.Schema;
 import org.apache.avro.specific.SpecificRecordBase;
 
@@ -18,7 +16,6 @@ public class Company extends SpecificRecordBase{
     public String Ticker;
 
     public Company(){}
-
 
     public String getCompany_name() {
         return this.company_name;
@@ -56,16 +53,8 @@ public class Company extends SpecificRecordBase{
         return this.Ticker;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-            " company_name='" + getCompany_name() + "'" +
-            ", Founding_Member='" + getFounding_Member() + "'" +
-            ", Founding_Year='" + getFounding_Year() + "'" +
-            ", EmployeeCount='" + getEmployeeCount() + "'" +
-            ", Ticker='" + getTicker() + "'" +
-            "}";
-    }
+    
+   
 
 
     @Override
@@ -89,4 +78,5 @@ public class Company extends SpecificRecordBase{
     }
 
 }
+
 
