@@ -1,8 +1,12 @@
 package com.example;
+import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
+
+import org.apache.avro.Schema;
+import org.apache.avro.specific.SpecificRecordBase;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Company {
+public class Company extends SpecificRecordBase{
     public String company_name;
     public String companyName;
     public String Founding_Member;
@@ -61,6 +65,27 @@ public class Company {
             ", EmployeeCount='" + getEmployeeCount() + "'" +
             ", Ticker='" + getTicker() + "'" +
             "}";
+    }
+
+
+    @Override
+    public Schema getSchema() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+
+    @Override
+    public Object get(int field) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+
+    @Override
+    public void put(int field, Object value) {
+        // TODO Auto-generated method stub
+        
     }
 
 }
