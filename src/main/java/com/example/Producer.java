@@ -41,7 +41,7 @@ public class Producer {
         // consume trial message using custom serdes
         AtomicReference<Company> msgCons = new AtomicReference<>();
         KafkaConsumer<String, Company> consumer = createKafkaConsumer();
-        consumer.subscribe(Arrays.asList("java"));
+        consumer.subscribe(Arrays.asList("sourceA"));
         ConsumerRecords<String, Company> records = consumer.poll(Duration.ofSeconds(1));
         records.forEach(record -> {
             msgCons.set(record.value());
